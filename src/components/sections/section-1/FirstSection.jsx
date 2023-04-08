@@ -6,9 +6,11 @@ import self from '../../../assets/img/self.png'
 
 const FirstSection = () => {
     const [blockActive, setBlockActive] = useState(false)
+    const [switchActive, setSwitchActive] = useState(false)
 
     const onStartClick = () => {
         setBlockActive(!blockActive)
+        setSwitchActive(!switchActive)
         console.log(blockActive)
     }
     return (
@@ -27,7 +29,11 @@ const FirstSection = () => {
                     </div>         
                 </div>
 
-                <div className='first-section__btn' onClick={onStartClick}>START</div>
+                <div className='first-section__btn' onClick={onStartClick}>
+                    <div className={switchActive ? 'elipse elipse--active' : 'elipse'}>
+                        <div className='circle'></div>
+                    </div>
+                </div>
 
                 <div className={blockActive ? 'first-section__second second--active' : 'first-section__second'}>
                     <div className='first-section__descr'>

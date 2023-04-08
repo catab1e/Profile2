@@ -20,11 +20,11 @@ const Navbar = () => {
                 </div>
 
                 <div className='navbar__right'>
-                    <p>Some</p>
-                    <p>Some</p>
-                    <p>Some</p>
-                    <p>Some</p>
-                    <p>Some</p>
+                    <p>Home</p>
+                    <p>About</p>
+                    <p>Projects</p>
+                    <p>Contacts</p>
+                    <p>Help</p>
                 </div>
             </div>
 

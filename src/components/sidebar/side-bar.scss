@@ -8,10 +8,13 @@
 
   transform: translateX(-120%);
 
+  opacity: 0;
+
   transition: 0.3s ease-in-out;
 
   &.active {
     transform: translateX(0);
+    opacity: 1;
   }
 
   .sidebar--blur {
@@ -68,6 +71,10 @@
       &:hover{
         width: 75%;
         height: 55px;
+
+        border: 1px solid white;
+
+        background-color: rgba(0, 0, 0, 0.623);
       }
     }
   }
