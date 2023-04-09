@@ -1,6 +1,6 @@
 .project{
-    width: 400px;
-    min-height: 250px;
+    width: 320px;
+    min-height: 230px;
 
     display: flex;
     justify-content: center;
@@ -10,11 +10,23 @@
 
     overflow: hidden;
 
-    border-radius: 15px;
+    border-radius: 10px;
 
     background-color: black;
 
     position: relative;
+
+    transition: 0.5s;
+
+    &.project--selected{
+        width: 400px;
+        height: 300px;
+
+        -webkit-box-reflect: below 10px 
+        -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(rgba(255, 255, 255, 0.308)));
+
+        z-index: 99;
+    }
 
 
     .project__img-holder{
