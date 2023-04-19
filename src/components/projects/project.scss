@@ -22,6 +22,8 @@
         width: 400px;
         height: 300px;
 
+        border: 1px solid white;
+
         -webkit-box-reflect: below 10px 
         -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(rgba(255, 255, 255, 0.308)));
 
