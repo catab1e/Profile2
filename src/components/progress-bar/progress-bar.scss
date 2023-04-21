@@ -1,0 +1,40 @@
+.progress-bar{
+    width: 500px;
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(187, 190, 0);
+    border-radius: 250px;
+
+    overflow: hidden;
+
+    border: none;
+
+    &:hover{
+
+
+        .progress-bar__inner{
+            transform: translateX(100%) translateY(50%) rotateZ(-45deg);
+
+            height: 10px;
+        }
+    }
+
+    .progress-bar__inner{
+        width: 1000px;
+        height: 600px;
+
+        background-color: black;
+
+        // border-left: 20px solid blue;
+
+        transform-origin: top left;
+        transform: translateX(50%) translateY(50%);
+
+        transition: 0.5s;
+
+    }
+}
