@@ -60,13 +60,13 @@ const SecondSection = () => {
                         <Project key={index} num={index} curInd={currentIndex} name={obj.name} imageUrl={obj.imageUrl}/>
                     ))}
                 </div>
-
-                <div className='second-section__buttons'>
-                    <button className='second-section__btn' onClick={handleUpClick}>PREV</button>
-                    <button className='second-section__btn' onClick={handleDownClick}>NEXT</button>
-                </div>
             </div>
 
+            <div className='second-section__buttons'>
+                <button className='second-section__btn' onClick={handleUpClick}>PREV</button>
+                <button className='second-section__btn' onClick={handleDownClick}>NEXT</button>
+            </div>
+            
             <div className='second-section__block'>
                 <h1>METADATA</h1>
             </div>

@@ -1,10 +1,13 @@
 import React from 'react';
 import './progress-bar.scss'
 
-const ProgressBar = () => {
+const ProgressBar = (props) => {
     return (
         <div className='progress-bar'>
-            <div className='progress-bar__inner'></div>
+            <p>{props.title}</p>
+            <div className='progress-bar__line'>
+                <div className='progress-bar__inner' style={{width: props.value}}></div>
+            </div>
         </div>
     );
 };
